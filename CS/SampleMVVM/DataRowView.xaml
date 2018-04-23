@@ -1,0 +1,29 @@
+﻿<Window x:Class="SampleMVVM.DataRowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        xmlns:local="clr-namespace:SampleMVVM"
+        Height="500"
+        Width="700"
+        Title="How to handle double-click on a grid row in a MVVM application">
+    <Window.DataContext>
+        <local:SampleViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <dxg:GridControl Name="grid"
+                         AutoGenerateColumns="AddNew"
+                         CurrentItem="{Binding CurrentItem}"
+                         ItemsSource="{Binding Items}"
+                         SelectionMode="Row">
+            <dxg:GridControl.View>
+                <dxg:TableView AutoWidth="True">
+                    <dxmvvm:Interaction.Behaviors>
+                        <dxmvvm:EventToCommand EventName="RowDoubleClick" 
+                                               Command="{Binding RowDoubleClickCommand}"/>
+                    </dxmvvm:Interaction.Behaviors>
+                </dxg:TableView>
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</Window>
