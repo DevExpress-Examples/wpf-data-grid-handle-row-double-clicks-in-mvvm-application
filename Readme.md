@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [DataRowModel.cs](./CS/SampleMVVM/DataRowModel.cs) (VB: [DataRowModel.vb](./VB/SampleMVVM/DataRowModel.vb))
-* [DataRowView.xaml](./CS/SampleMVVM/DataRowView.xaml) (VB: [DataRowView.xaml.vb](./VB/SampleMVVM/DataRowView.xaml.vb))
+* [DataRowView.xaml](./CS/SampleMVVM/DataRowView.xaml) (VB: [DataRowView.xaml](./VB/SampleMVVM/DataRowView.xaml))
 * [DataRowView.xaml.cs](./CS/SampleMVVM/DataRowView.xaml.cs) (VB: [DataRowView.xaml.vb](./VB/SampleMVVM/DataRowView.xaml.vb))
 * [DataRowViewModel.cs](./CS/SampleMVVM/DataRowViewModel.cs) (VB: [DataRowViewModel.vb](./VB/SampleMVVM/DataRowViewModel.vb))
 <!-- default file list end -->
