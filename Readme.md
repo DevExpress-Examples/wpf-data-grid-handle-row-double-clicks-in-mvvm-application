@@ -1,8 +1,8 @@
-# How to handle a double-click on a grid row in a MVVM application
+# How to handle a double-click on a Grid row in a MVVM application
 
 
-<p>This example demonstrates one of many possible solutions for decoupling DXGrid mouse event handling from business logic, when using the MVVM architectural pattern.</p>
+This example demonstrates how to process double-clicks in a View Model, if you want to maintain a clean MVVM pattern.
 
-<br/>
+Create a command and bind it to the **RowDoubleClickCommand** property.
 
-
+Refer the following topic for more information: [RowDoubleClickCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TableView.RowDoubleClickCommand?v=21.1&p=netframework)
