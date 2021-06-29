@@ -11,8 +11,7 @@
         <dxg:GridControl Name="grid"
                          SelectionMode="Row"
                          AutoGenerateColumns="AddNew"
-                         ItemsSource="{Binding Items}"
-                         CurrentItem="{Binding CurrentItem}">
+                         ItemsSource="{Binding Items}">
             <dxg:GridControl.View>
                 <dxg:TableView AutoWidth="True" RowDoubleClickCommand="{Binding RowDoubleClickCommand}"/>
             </dxg:GridControl.View>

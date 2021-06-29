@@ -15,10 +15,7 @@ namespace RowDoubleClick_MVVM {
     }
     public class MainViewModel : ViewModelBase {
         public ObservableCollection<DataItem> Items { get; }
-        public DataItem CurrentItem {
-            get { return GetProperty(() => CurrentItem); }
-            set { SetProperty(() => CurrentItem, value); }
-        }
+        
         public MainViewModel() {
             Items = new ObservableCollection<DataItem>(GetItems());
         }
@@ -28,7 +25,7 @@ namespace RowDoubleClick_MVVM {
 
         [Command]
         public void RowDoubleClick(RowClickArgs args) {
-            DXMessageBox.Show("Row double click: " + CurrentItem.Name);
+            DXMessageBox.Show("Row double click: " + ((DataItem)args.Item).Name);
         }
     }
 }
