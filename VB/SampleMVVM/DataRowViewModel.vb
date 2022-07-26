@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to handle a double-click on a grid row in a MVVM application
 ' 
 ' This example demonstrates one of many possible solutions for decoupling DXGrid
@@ -7,38 +7,39 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E2458
-
-Imports Microsoft.VisualBasic
-Imports System
 Imports System.Windows
 Imports System.Windows.Input
 Imports DevExpress.Xpf.Core.Commands
 
 Namespace SampleMVVM
-	Public Class DataRowViewModel
-		Private privateRow As DataRowModel
-		Public Property Row() As DataRowModel
-			Get
-				Return privateRow
-			End Get
-			Private Set(ByVal value As DataRowModel)
-				privateRow = value
-			End Set
+
+    Public Class DataRowViewModel
+
+        Private _Row As DataRowModel, _CellDoubleClickCommand As ICommand
+
+        Public Property Row As DataRowModel
+            Get
+                Return _Row
+            End Get
+
+            Private Set(ByVal value As DataRowModel)
+                _Row = value
+            End Set
         End Property
 
-		Private privateCellDoubleClickCommand As ICommand
-		Public Property CellDoubleClickCommand() As ICommand
-			Get
-				Return privateCellDoubleClickCommand
-			End Get
-			Private Set(ByVal value As ICommand)
-				privateCellDoubleClickCommand = value
-			End Set
+        Public Property CellDoubleClickCommand As ICommand
+            Get
+                Return _CellDoubleClickCommand
+            End Get
+
+            Private Set(ByVal value As ICommand)
+                _CellDoubleClickCommand = value
+            End Set
         End Property
 
-		Public Sub New(ByVal row As DataRowModel)
+        Public Sub New(ByVal row As DataRowModel)
             Me.Row = row
-			CellDoubleClickCommand = New DelegateCommand(Of Object)(Function(o) MessageBox.Show("Cell double click. Row: " & Row.Id))
-		End Sub
-	End Class
+            CellDoubleClickCommand = New DelegateCommand(Of Object)(Sub(o) MessageBox.Show("Cell double click. Row: " & Me.Row.Id))
+        End Sub
+    End Class
 End Namespace
