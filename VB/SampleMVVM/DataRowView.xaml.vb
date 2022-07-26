@@ -1,11 +1,12 @@
-﻿Imports System.Windows
+Imports System.Windows
 
 Namespace SampleMVVM
-    Partial Public Class DataRowView
+
+    Public Partial Class DataRowView
         Inherits Window
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
         End Sub
     End Class
 End Namespace
