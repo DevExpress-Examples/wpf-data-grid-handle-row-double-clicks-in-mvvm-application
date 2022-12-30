@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# WPF Data Grid - How to Handle Row Double-clicks in a MVVM Application
+# WPF Data Grid - How to Handle Row Double-clicks in an MVVM Application
 
 This example demonstrates how to process double-clicks in a View Model if you want to maintain a clean MVVM pattern.
 
