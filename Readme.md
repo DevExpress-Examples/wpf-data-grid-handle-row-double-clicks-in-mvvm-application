@@ -29,7 +29,7 @@ Create a command and bind it to the [RowDoubleClickCommand](https://docs.devexpr
 
 - [How to Handle Row Double-clicks](https://github.com/DevExpress-Examples/how-to-handle-row-double-clicks-e2915)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-handle-row-double-clicks-in-mvvm-application&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-handle-row-double-clicks-in-mvvm-application&~~~was_helpful=no)
 
